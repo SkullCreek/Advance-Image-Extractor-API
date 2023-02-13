@@ -1,2 +1,2 @@
 # logging level
-log_level = 'LOG_LEVEL'
+log_level = 'DEBUG'

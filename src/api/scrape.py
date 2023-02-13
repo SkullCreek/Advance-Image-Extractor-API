@@ -6,10 +6,7 @@ import time
 
 class ImageScrapper:
     """
-    ImageScrapper class scrapes images from website
-
-    Attributes:
-
+    ImageScrapper class scrapes images from website.
     """
 
     def __init__(self, number_images: int, wd: webdriver, sleep: int = 1):
