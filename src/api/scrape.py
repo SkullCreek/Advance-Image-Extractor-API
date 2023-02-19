@@ -1,7 +1,9 @@
+from utilities import utils
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
+
 
 
 class ImageScrapper:
@@ -17,12 +19,15 @@ class ImageScrapper:
         :param sleep: sleeping time between clicks
         """
         try:
+            self.custom_logger = utils.CustomLogging("scrapper")
+            self.custom_logger.initialize_logger()
             self.number_images = number_images
             self.browser = wd.Chrome(ChromeDriverManager().install())
             self.sleep = sleep
             self.url = set()
             self.extra = 0
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(__init__)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
     def get_request(self, query: str):
@@ -40,6 +45,7 @@ class ImageScrapper:
             # load the page
             self.browser.get(geturl)
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(get_request)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
     #
@@ -61,14 +67,19 @@ class ImageScrapper:
                     if len(self.url) == self.number_images:
                         break
                 except Exception as e:
-                    print(e)
+                    self.custom_logger.append_message('(Scrape.py(fetch_image_url)) - Continue fetching images ' +
+                                                      str(e.args[0]), 'info')
                     continue
             if len(self.url) < self.number_images:
                 self.__fetch_more()
             else:
+                self.browser.quit()
+                self.custom_logger.append_message('(Scrape.py(fetch_image_url)) - Process finished with extracting '
+                                                  + str(len(self.url)) + ' images', 'info')
                 return self.url
 
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(fetch_image_url)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
     def __fetch_thumbnail(self):
@@ -87,7 +98,8 @@ class ImageScrapper:
                         show_more[0].click()
                         time.sleep(self.sleep)
                     except Exception as e:
-                        print(e)
+                        self.custom_logger.append_message('(Scrape.py(__fetch_thumbnail)) - Break the loop' +
+                                                          str(e.args[0]), 'info')
                         break
                 thumbnail_results = self.browser.find_elements(By.CLASS_NAME, "Q4LuWd")
                 prev = curr_len
@@ -95,6 +107,7 @@ class ImageScrapper:
             return thumbnail_results
 
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(__fetch_thumbnail)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
     def __fetch_more(self):
@@ -109,6 +122,7 @@ class ImageScrapper:
             self.fetch_image_url()
 
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(__fetch_more)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
     def __scroll_to_end(self):
@@ -119,6 +133,7 @@ class ImageScrapper:
             self.browser.execute_script('window.scrollTo(0,document.body.scrollHeight);')
             time.sleep(self.sleep)
         except Exception as e:
+            self.custom_logger.append_message('(Scrape.py(__scroll_to_end)) - ' + str(e.args[0]), 'exception')
             raise Exception(e)
 
 

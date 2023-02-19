@@ -26,7 +26,7 @@ class CustomLogging:
                     self.logger.setLevel(logging.DEBUG)
 
                 # Creating formatter
-                formatter = logging.Formatter('%(levelname)s - %(asctime)s : %(name)s - %(message)s;')
+                formatter = logging.Formatter('%(levelname)s - %(asctime)s : %(name)s - %(message)s.')
 
                 # Creating file handlers
                 file_handler = logging.FileHandler('../../logs/api.log')
@@ -37,7 +37,6 @@ class CustomLogging:
                 # Adding file handler to logger
                 self.logger.addHandler(file_handler)
 
-            return self.logger
         except Exception as e:
             raise Exception(e)
 
