@@ -16,6 +16,9 @@ class CustomLogging:
             raise Exception(e)
 
     def initialize_logger(self):
+        """
+        Initializes the logger by setting level, creating formatter and file handler
+        """
         try:
             if len(self.logger.handlers) == 0:
                 # Setting the level
@@ -41,6 +44,11 @@ class CustomLogging:
             raise Exception(e)
 
     def append_message(self, logging_statement, logging_level):
+        """
+        Append logging message to the logging file
+        :param logging_statement: The message which will get logged
+        :param logging_level: logging level can be info, warning, error or exception
+        """
         try:
             if logging_level == "info":
                 self.logger.info(logging_statement)

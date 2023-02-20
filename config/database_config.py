@@ -1,0 +1,5 @@
+cloud_config_path = "D:\Machine Learning\Projects\Advance Image Extractor API\secure-connect-test.zip"
+cassandra_ClientId = "xZEccmZboeQMSkhyEIfjEXPg"
+cassandra_ClientSecret = ".nAHjKvpWE6ubsj6mkKdC8Yk0Dz1zgh.BsnMEQsf6jLa2Pjn+Hq-lESYtdm0XLJH6nu4OXmyBqEw_QKPINQKcAkidO-E5QUFM-Sbd,in_bLL.P6Di-1LlaW_mXXOfm0c"
+keyspace_name = "darpan"
+table_name = "users"
