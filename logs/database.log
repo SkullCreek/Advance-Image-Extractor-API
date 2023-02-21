@@ -1,0 +1,47 @@
+INFO - 2023-02-21 18:24:36,694 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 18:24:36,972 : database - (database.py(create_table)) - Table Created.
+INFO - 2023-02-21 18:24:37,245 : database - (database.py(create_table)) - Data Inserted.
+INFO - 2023-02-21 18:49:46,393 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 18:49:46,656 : database - (database.py(create_table)) - Table Created.
+INFO - 2023-02-21 18:50:27,027 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 18:50:27,343 : database - (database.py(create_table)) - Table Created.
+INFO - 2023-02-21 18:54:07,759 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 18:54:08,030 : database - (database.py(create_table)) - Table Created.
+ERROR - 2023-02-21 18:54:08,562 : database - (database.py(insert_user_data)) - object of type 'property' has no len().
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\models\database.py", line 74, in insert_user_data
+    self.session.execute(prepared, [uuid, email, url])
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\cluster.py", line 2618, in execute
+    return self.execute_async(query, parameters, trace, custom_payload, timeout, execution_profile, paging_state, host, execute_as).result()
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\cluster.py", line 2666, in execute_async
+    future.send_request()
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\cluster.py", line 4419, in send_request
+    for host in self.query_plan:
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\policies.py", line 379, in make_query_plan
+    replicas = self._cluster_metadata.get_replicas(keyspace, routing_key)
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\metadata.py", line 314, in get_replicas
+    return t.get_replicas(keyspace, t.token_class.from_key(key))
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\metadata.py", line 1805, in from_key
+    return cls(cls.hash_fn(key))
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\metadata.py", line 1850, in hash_fn
+    h = int(murmur3(key))
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\murmur3.py", line 54, in _murmur3
+    body, tail, total_len = body_and_tail(data)
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\murmur3.py", line 6, in body_and_tail
+    l = len(data)
+TypeError: object of type 'property' has no len()
+INFO - 2023-02-21 18:54:47,951 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 18:54:48,208 : database - (database.py(create_table)) - Table Created.
+INFO - 2023-02-21 18:54:49,003 : database - (database.py(create_table)) - Data Inserted.
+INFO - 2023-02-21 18:57:49,735 : database - (database.py(create_table)) - Database Connected.
+INFO - 2023-02-21 19:00:15,207 : database - (database.py(create_table)) - Database Connected.
+ERROR - 2023-02-21 19:00:25,843 : database - (database.py(delete_table)) - errors={<Host: 49cd0c2a-6cdc-4824-9905-6f0ee224d87d-us-east1.db.astra.datastax.com:29042:30fa340b-7435-4c65-a52e-b68075f32aca us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=49cd0c2a-6cdc-4824-9905-6f0ee224d87d-us-east1.db.astra.datastax.com:29042:4582e921-1f53-47c3-ae2a-d69ed11c78d1.
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\models\database.py", line 110, in delete_table
+    self.session.execute("DROP TABLE IF EXISTS {}".format(database_config.table_name))
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\cluster.py", line 2618, in execute
+    return self.execute_async(query, parameters, trace, custom_payload, timeout, execution_profile, paging_state, host, execute_as).result()
+  File "C:\Users\darpan\anaconda3\lib\site-packages\cassandra\cluster.py", line 4894, in result
+    raise self._final_exception
+cassandra.OperationTimedOut: errors={<Host: 49cd0c2a-6cdc-4824-9905-6f0ee224d87d-us-east1.db.astra.datastax.com:29042:30fa340b-7435-4c65-a52e-b68075f32aca us-east1>: ConnectionException('Host has been marked down or removed')}, last_host=49cd0c2a-6cdc-4824-9905-6f0ee224d87d-us-east1.db.astra.datastax.com:29042:4582e921-1f53-47c3-ae2a-d69ed11c78d1
+INFO - 2023-02-21 19:00:43,028 : database - (database.py(create_table)) - Database Connected.

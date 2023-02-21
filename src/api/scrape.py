@@ -5,7 +5,6 @@ from webdriver_manager.chrome import ChromeDriverManager
 import time
 
 
-
 class ImageScrapper:
     """
     ImageScrapper class scrapes images from website.
@@ -20,7 +19,7 @@ class ImageScrapper:
         """
         try:
             self.custom_logger = utils.CustomLogging("scrapper")
-            self.custom_logger.initialize_logger()
+            self.custom_logger.initialize_logger('../../logs/scrape.log')
             self.number_images = number_images
             self.browser = wd.Chrome(ChromeDriverManager().install())
             self.sleep = sleep

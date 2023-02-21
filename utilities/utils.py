@@ -15,7 +15,7 @@ class CustomLogging:
         except Exception as e:
             raise Exception(e)
 
-    def initialize_logger(self):
+    def initialize_logger(self, path):
         """
         Initializes the logger by setting level, creating formatter and file handler
         """
@@ -32,7 +32,7 @@ class CustomLogging:
                 formatter = logging.Formatter('%(levelname)s - %(asctime)s : %(name)s - %(message)s.')
 
                 # Creating file handlers
-                file_handler = logging.FileHandler('../../logs/api.log')
+                file_handler = logging.FileHandler(path)
 
                 # Adding formatter to file handler
                 file_handler.setFormatter(formatter)
