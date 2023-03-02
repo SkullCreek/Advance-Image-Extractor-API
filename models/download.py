@@ -1,17 +1,27 @@
-from cassandra.cluster import Cluster
-from cassandra.auth import PlainTextAuthProvider
-from config import database_config
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+from config import download_config as dc
+from utilities import utils
 
-cloud_config= {
-  'secure_connect_bundle': database_config.cloud_config_path
-}
-auth_provider = PlainTextAuthProvider(database_config.cassandra_ClientId, database_config.cassandra_ClientSecret)
-cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
-session = cluster.connect()
-session.set_keyspace(database_config.keyspace_name)
+class DownloadImages:
 
-row = session.execute("select release_version from system.local").one()
-if row:
-  print(row[0])
-else:
-  print("An error occurred.")
+    def __init__(self, urls):
+        try:
+            self.custom_logger = utils.CustomLogging("download")
+            self.custom_logger.initialize_logger('../logs/database.log')
+            self.storage = cloudinary.config(
+                cloud_name=dc.cloud_name,
+                api_key=dc.api_key,
+                api_secret=dc.api_secret,
+                secure=True
+            )
+            self.urls = urls
+        except Exception as e:
+            self.custom_logger.append_message("(download.py(__init__) - " + e.args[0], "exception")
+            raise Exception(e)
+
+    def download_image(self):
+        pass
+
+a = DownloadImages("abc")
