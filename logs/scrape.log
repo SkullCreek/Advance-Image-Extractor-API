@@ -1,1 +1,164 @@
 INFO - 2023-02-21 18:23:35,249 : scrapper - (Scrape.py(fetch_image_url)) - Process finished with extracting 10 images.
+INFO - 2023-03-22 19:25:49,541 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images element click intercepted: Element <img src="data:image/jpeg;base64,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" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="161" height="286" alt="Best Night iPhone HD Wallpapers - iLikeWallpaper" data-iml="1319.2000000029802" data-atf="false"> is not clickable at point (102, 689). Other element would receive the click: <img src="data:image/jpeg;base64,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" data-deferred="1" class="rg_i Q4LuWd" jsname="Q4LuWd" width="300" height="169" alt="Free and fully customizable desktop wallpaper templates | Canva" data-iml="1318.2999999970198" data-atf="false">
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:25:58,216 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images element click intercepted: Element <img data-ils="4" jsaction="rcuQ6b:trigger.M8vzZb;" class="rg_i Q4LuWd" jsname="Q4LuWd" width="121" height="261" alt="Cool Wallpapers: Top 95 Best Cool Backgrounds Download" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE-bvT1KQG1JUZEBsvDEyHgt8sY65gNNotzQ&amp;usqp=CAU"> is not clickable at point (109, 691). Other element would receive the click: <span class="tRnLkd">...</span>
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:26:05,787 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images element click intercepted: Element <img data-ils="4" jsaction="rcuQ6b:trigger.M8vzZb;" class="rg_i Q4LuWd" jsname="Q4LuWd" width="152" height="330" alt="Free Cartoon Iphone Wallpaper Downloads, [200+] Cartoon Iphone Wallpapers  for FREE | Wallpapers.com" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf7K4PL-1MtXYwgdkC5F2bNgLhjtO5E4eP5Q&amp;usqp=CAU"> is not clickable at point (150, 690). Other element would receive the click: <img data-ils="4" jsaction="rcuQ6b:trigger.M8vzZb;" class="rg_i Q4LuWd" jsname="Q4LuWd" width="264" height="180" alt="70,000+ Beautiful HD Wallpaper Images | Free Download - Pixabay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjnqzKt1MNpeTuKwn2VthsZQB5o_jmqF9Yew&amp;usqp=CAU">
+  (Session info: chrome=111.0.5563.65).
+ERROR - 2023-03-22 19:26:22,241 : scrapper - (Scrape.py(__fetch_more)) - element click intercepted: Element <a href="/search?q=wallpaper&amp;tbm=isch&amp;chips=q:wallpaper,g_1:iphone:O8mN44WDdb4%3D&amp;hl=en-US&amp;sa=X&amp;ved=2ahUKEwjhkqX_nvD9AhX0itgFHVJ0AdMQ4lYoAHoECAEQIg" data-navigation="server" jslog="11106" aria-label="iphone" class="ZZ7G7b A6Smgb">...</a> is not clickable at point (80, 24). Other element would receive the click: <svg fill="none" stroke-width="18" viewBox="0 0 520 174" width="90" height="34" class="TYpZOd">...</svg>
+  (Session info: chrome=111.0.5563.65).
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 119, in __fetch_more
+    get_ele[self.extra].click()
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="/search?q=wallpaper&amp;tbm=isch&amp;chips=q:wallpaper,g_1:iphone:O8mN44WDdb4%3D&amp;hl=en-US&amp;sa=X&amp;ved=2ahUKEwjhkqX_nvD9AhX0itgFHVJ0AdMQ4lYoAHoECAEQIg" data-navigation="server" jslog="11106" aria-label="iphone" class="ZZ7G7b A6Smgb">...</a> is not clickable at point (80, 24). Other element would receive the click: <svg fill="none" stroke-width="18" viewBox="0 0 520 174" width="90" height="34" class="TYpZOd">...</svg>
+  (Session info: chrome=111.0.5563.65)
+
+ERROR - 2023-03-22 19:26:22,243 : scrapper - (Scrape.py(fetch_image_url)) - Message: element click intercepted: Element <a href="/search?q=wallpaper&amp;tbm=isch&amp;chips=q:wallpaper,g_1:iphone:O8mN44WDdb4%3D&amp;hl=en-US&amp;sa=X&amp;ved=2ahUKEwjhkqX_nvD9AhX0itgFHVJ0AdMQ4lYoAHoECAEQIg" data-navigation="server" jslog="11106" aria-label="iphone" class="ZZ7G7b A6Smgb">...</a> is not clickable at point (80, 24). Other element would receive the click: <svg fill="none" stroke-width="18" viewBox="0 0 520 174" width="90" height="34" class="TYpZOd">...</svg>
+  (Session info: chrome=111.0.5563.65)
+.
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 119, in __fetch_more
+    get_ele[self.extra].click()
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 80, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a href="/search?q=wallpaper&amp;tbm=isch&amp;chips=q:wallpaper,g_1:iphone:O8mN44WDdb4%3D&amp;hl=en-US&amp;sa=X&amp;ved=2ahUKEwjhkqX_nvD9AhX0itgFHVJ0AdMQ4lYoAHoECAEQIg" data-navigation="server" jslog="11106" aria-label="iphone" class="ZZ7G7b A6Smgb">...</a> is not clickable at point (80, 24). Other element would receive the click: <svg fill="none" stroke-width="18" viewBox="0 0 520 174" width="90" height="34" class="TYpZOd">...</svg>
+  (Session info: chrome=111.0.5563.65)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 73, in fetch_image_url
+    self.__fetch_more()
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 125, in __fetch_more
+    raise Exception(e)
+Exception: Message: element click intercepted: Element <a href="/search?q=wallpaper&amp;tbm=isch&amp;chips=q:wallpaper,g_1:iphone:O8mN44WDdb4%3D&amp;hl=en-US&amp;sa=X&amp;ved=2ahUKEwjhkqX_nvD9AhX0itgFHVJ0AdMQ4lYoAHoECAEQIg" data-navigation="server" jslog="11106" aria-label="iphone" class="ZZ7G7b A6Smgb">...</a> is not clickable at point (80, 24). Other element would receive the click: <svg fill="none" stroke-width="18" viewBox="0 0 520 174" width="90" height="34" class="TYpZOd">...</svg>
+  (Session info: chrome=111.0.5563.65)
+
+INFO - 2023-03-22 19:27:22,048 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,049 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,051 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,053 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,055 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,056 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,058 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,060 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,061 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,063 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,064 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,066 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,067 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,069 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,070 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,072 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,074 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,075 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,076 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,078 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,080 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+INFO - 2023-03-22 19:27:22,081 : scrapper - (Scrape.py(fetch_image_url)) - Continue fetching images no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+ERROR - 2023-03-22 19:27:22,083 : scrapper - (Scrape.py(__fetch_more)) - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65).
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 118, in __fetch_more
+    get_ele = self.browser.find_elements(By.CLASS_NAME, "ZZ7G7b")
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1005, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+
+ERROR - 2023-03-22 19:27:22,084 : scrapper - (Scrape.py(fetch_image_url)) - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+.
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 118, in __fetch_more
+    get_ele = self.browser.find_elements(By.CLASS_NAME, "ZZ7G7b")
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 1005, in find_elements
+    return self.execute(Command.FIND_ELEMENTS, {
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\darpan\AppData\Local\Programs\Python\Python39\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 73, in fetch_image_url
+    self.__fetch_more()
+  File "D:\Machine Learning\Projects\Advance Image Extractor API\src\api\scrape.py", line 125, in __fetch_more
+    raise Exception(e)
+Exception: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=111.0.5563.65)
+
+INFO - 2023-03-22 19:28:21,758 : scrapper - (Scrape.py(fetch_image_url)) - Process finished with extracting 5 images.
+INFO - 2023-03-22 19:29:04,711 : scrapper - (Scrape.py(fetch_image_url)) - Process finished with extracting 10 images.
